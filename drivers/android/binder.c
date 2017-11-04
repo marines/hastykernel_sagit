@@ -4027,6 +4027,8 @@ static int binder_open(struct inode *nodp, struct file *filp)
 	if (proc == NULL)
 		return -ENOMEM;
 
+	spin_lock_init(&proc->inner_lock);
+	spin_lock_init(&proc->outer_lock);
 	get_task_struct(current->group_leader);
 	proc->tsk = current->group_leader;
 	binder_init_worklist(&proc->todo);
