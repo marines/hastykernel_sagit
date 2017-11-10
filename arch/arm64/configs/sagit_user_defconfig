@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.4.96 Kernel Configuration
+# Linux/arm64 4.4.97 Kernel Configuration
 #
 CONFIG_ARM64=y
 CONFIG_64BIT=y
@@ -5139,3 +5139,4 @@ CONFIG_DEFAULT_MAPLE=y
 CONFIG_DEFAULT_IOSCHED="maple"
 CONFIG_QUICK_WAKEUP=y
 CONFIG_ADRENO_IDLER=y
+CONFIG_SOUND_CONTROL=y
